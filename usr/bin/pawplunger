@@ -5,7 +5,7 @@ sync && sysctl -w vm.drop_caches=3
 # Borrar cache
 echo 3 > /proc/sys/vm/drop_caches
 # Limpiando el cache de miniaturas
-rm -f ~/thumbnails/normal/*
+rm ~/thumbnails/normal/*
 # Limpiando archivos (Requiere bleachbit 1.0 en repo-testing está el paquete)
 QUICK_CLEAN="firefox.cache firefox.cookies firefox.dom firefox.download_history firefox.forms firefox.passwords firefox.session_restore firefox.url_history firefox.vacuum \
 flash.cache flash.cookies \
