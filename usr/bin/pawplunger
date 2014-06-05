@@ -1,0 +1,17 @@
+#!/bin/sh
+# Pawplunger. Script de optimización y limpieza de Sistema PuppyLinux
+# Liberar ram
+sync && sysctl -w vm.drop_caches=3
+# Borrar cache
+echo 3 > /proc/sys/vm/drop_caches
+# Limpiando archivos (Requiere bleachbit 1.0 en repo-testing está el paquete)
+QUICK_CLEAN="firefox.cache firefox.cookies firefox.dom firefox.download_history firefox.forms firefox.passwords firefox.session_restore firefox.url_history firefox.vacuum \
+flash.cache flash.cookies \
+openofficeorg.cache openofficeorg.recent_documents \
+chromium.cache chromium.cookies chromium.current_session chromium.dom chromium.form_history chromium.history chromium.search_engines chromium.vacuum"
+bleachbit -c $QUICK_CLEAN 
+# Mostrar resultados en la terminal y cerrar
+roxterm -e watch -n 1 free -m &
+sleep 5
+pkill roxterm
+exit 0
