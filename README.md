@@ -7,7 +7,7 @@ Script de optimización y limpieza de PuppyLinux
 
 Desarga bleachbit-1.0.pet desde terminal 
 
-`wget --no-check-certificate https://copy.com/DkSUojVB2tFr/bleachbit.1.0.pet`
+`wget --no-check-certificate https://copy.com/DkSUojVB2tFr/bleachbit-1.0.pet`
 
 #### Forma de uso 
 
@@ -17,7 +17,7 @@ luego ejecutar en terminal
 
 `pawplunger`
 
-El script necesita pulirse, se necesitan colaboradores para mejorar el código,
+Script en desarrollo, se necesitan colaboradores para mejorar el código,
 cualquier ayuda es bienvendia.
 
 
