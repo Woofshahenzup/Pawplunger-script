@@ -7,4 +7,4 @@ Script de optimización y limpieza de PuppyLinux
 
 Desarga desde terminal 
 
-### wget --no-check-certificate https://copy.com/DkSUojVB2tFr/bleachbit.1.0.pet
+`wget --no-check-certificate https://copy.com/DkSUojVB2tFr/bleachbit.1.0.pet`
